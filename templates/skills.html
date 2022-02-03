@@ -207,7 +207,12 @@
                 <div class="p-3 pb-5">
                     <div class="d-flex justify-content-between align-items-center mb-3 ">
                         <h4 class="text-right text-primary">Skills</h4>
-                        <i class="bi bi-plus h2 text-primary " style="cursor: pointer;"></i>
+                        <!-- <i class="bi bi-plus h2 text-primary " style="cursor: pointer;"></i> -->
+                        <a role="button" data-bs-toggle="modal" data-bs-target="#addSkill"><i class="bi bi-plus h2 text-primary"></i></a>
+
+                        
+                        <!-- <button type="button" class="btn btn-primary btn-sm bg-white plus" data-toggle="modal" data-target="#changeCity"><i class="bi bi-plus h2 text-primary " style="cursor: pointer;"></i></button> -->
+                        
                     </div>
                     <div class="skills">
                         <span class="p-2 py-1 mx-1 mb-2 d-inline-flex  rounded-pill bg-primary text-white">
@@ -308,6 +313,7 @@
                             data-bs-toggle="modal"
                              data-bs-target="#staticBackdrop"></i>
                         </span>
+                       
                         
                     
 
@@ -324,10 +330,32 @@
 
         </div>
       </div>
+      <div class="modal fade" id="addSkill" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3">
+                <div class="modal-header">
+                    <h4 class="modal-title fw-bold text-center" id="exampleModalLabel">Add Skill</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form >
+                      <input type="text " class="form-control">
+                    </form>
+                </div>
+                
+                <div class="modal-footer">
+                
+                    <button type="button" class="btn btn-primary"             data-bs-dismiss="modal"
+                    >Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
        <!-- Modal -->
-    <div
-    class="modal fade"
+    <!-- <div
+    class="modal fade "
     id="staticBackdrop"
     data-bs-backdrop="static"
     data-bs-keyboard="false"
@@ -355,11 +383,13 @@
           >
             No
           </button>
-          <button type="button" class="btn btn-primary">Yes</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Yes</button>
+
+          <!-- <button type="button" class="btn btn-primary remove">Yes</button> -->
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
     </section>
  
 

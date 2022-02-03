@@ -118,7 +118,7 @@
     </nav>
 
     <!-- Profile -->
-    <section class="profile my-5 mx-auto" id="profile">
+    <section class="profile my-5 mx-auto" id="experience">
       <div
         class="container row mx-auto justify-content-between"
         style="margin-top: 5rem"
@@ -192,11 +192,11 @@
             <div class="col-md-3 border-right mx-auto ">
             
             </div>
-            <div class=" border-right">
-                <div class="p-3 pb-5">
+            <div class=" border-right" >
+                <div class="p-3 pb-5" id="experience-body">
                     <div class="d-flex justify-content-between align-items-center my-3 ">
                         <h4 class="text-right text-primary">Experience</h4>
-                        <i class="bi bi-plus h2 text-primary  " style="cursor: pointer;"></i>
+                        <a role="button" data-bs-toggle="modal" data-bs-target="#modifyExperience"><i class="bi bi-plus h2 text-primary"></i></a>
 
                     </div>
                     <div class="row my-3 experience-card">
@@ -212,7 +212,8 @@
                                     <p class="text-black">Worked as a full time freelencer in fiverr. Worked as a full time freelencer in fiverr. Worked as a full time freelencer .</p>
                                 </div>
                                 <div class="col-2 align-self-start">
-                                    <i class="bi bi-trash text-primary h5 mx-1  trash" style="cursor: pointer;"></i>
+                                    <i class="bi bi-trash text-primary h5 mx-1  trash" style="cursor: pointer;" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop"></i>
                                     <i class="bi bi-pencil-square text-primary h5  mx-1 modify" style="cursor: pointer;"></i>
 
                                 </div>
@@ -232,7 +233,8 @@
                                     <p class="text-black">Worked as a full time freelencer in fiverr. Worked as a full time freelencer in fiverr. Worked as a full time freelencer .</p>
                                 </div>
                                 <div class="col-2 align-self-start">
-                                    <i class="bi bi-trash text-primary h5 mx-1  trash" style="cursor: pointer;"></i>
+                                    <i class="bi bi-trash text-primary h5 mx-1  trash" style="cursor: pointer;" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop"></i>
                                     <i class="bi bi-pencil-square text-primary h5  mx-1 modify" style="cursor: pointer;"></i>
 
                                 </div>
@@ -267,6 +269,65 @@
           </div>
         </div>
       </div>
+      <div class="modal fade" id="modifyExperience" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3">
+                <div class="modal-header">
+                    <h4 class="modal-title fw-bold text-center" id="exampleModalLabel">Add Experience</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form >
+                      <input type="text" class="form-control" placeholder="Add experince title" id="experinceTitle">
+                      <input type="text" class="form-control" placeholder="Add the city" id="experinceCity">
+                      <input type="text" class="form-control" placeholder="Add the Job" id="experinceJob">
+                      <input type="text" class="form-control" placeholder="Add the description" id="experinceDescription">
+                    </form>
+                </div>
+                
+                <div class="modal-footer">
+                
+                    <button type="button" class="btn btn-primary"             data-bs-dismiss="modal"
+                    >Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+          <!-- Modal -->
+    <!-- <div
+    class="modal fade"
+    id="staticBackdrop"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+    tabindex="-1"
+    aria-labelledby="staticBackdropLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Delete</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">Do you want t delete?</div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            No
+          </button>
+          <button type="button" class="btn btn-primary">Yes</button>
+        </div>
+      </div>
+    </div>
+  </div> -->
     </section>
 
     <!-- footer -->
@@ -365,6 +426,7 @@
             data-mdb-ripple-color="dark"
             ><i class="bi bi-github"></i
           ></a>
+
         </section>
         <!-- Section: Social media -->
       </div>

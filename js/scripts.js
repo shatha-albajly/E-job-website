@@ -37,6 +37,77 @@ $(document).ready(function () {
       $("body").css("direction", "rtl");
     }
   });
+
+  // input skills
+  $(".modal-footer button").click(function () {
+    var usersCity = $(
+      "#addSkill > div > div > div.modal-body > form > input"
+    ).val();
+    console.log(usersCity);
+    // $("body").html("I'm in " + usersCity + "!");
+    $(
+      ".skills"
+    ).append(`<span class="p-2 py-1 mx-1 mb-2 d-inline-flex  rounded-pill bg-primary text-white">
+     ${usersCity}
+    <i class="bi bi-x" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i>
+</span>`);
+  });
+
+  // input experince
+  $("#experience .modal-footer button").click(function () {
+    var experinceTitle = $("#experinceTitle").val();
+    var experinceCity = $("#experinceCity").val();
+    var experinceJob = $("#experinceJob").val();
+    var experinceDescription = $("#experinceDescription").val();
+    console.log(experinceTitle);
+    // $("body").html("I'm in " + usersCity + "!");
+    $("#experience-body").append(`  <div class="row my-3 experience-card">
+
+    <div class=" shadow-sm mx-auto py-3 bg-white col-10 ">
+        <div class="d-flex justify-content-between align-items-center px-md-2">
+            <div class="col-10" >
+                <p class="h5 text-primary">${experinceTitle}</p>
+                <p class="text-black country p-0 m-0"> <span class="fw-bold">City : </span>
+                   ${experinceCity}</p>
+                <p class="text-black the-role m-0"><span class="fw-bold ">Role : </span>${experinceJob}</p>
+
+                <p class="text-black">${experinceDescription}</p>
+            </div>
+            <div class="col-2 align-self-start">
+                <i class="bi bi-trash text-primary h5 mx-1  trash" style="cursor: pointer;" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"></i>
+                <i class="bi bi-pencil-square text-primary h5  mx-1 modify" style="cursor: pointer;"></i>
+
+            </div>
+        </div>
+    </div>
+</div>`);
+  });
+
+  // experince
+
+  $(".experience-card > div").each(function (t) {
+    console.log(t);
+    $(this).on("click", function () {
+      $(this).remove();
+    });
+  });
+  // skills
+
+  $(".skills > span").each(function (t) {
+    console.log(t);
+    $(this).on("click", function () {
+      $(this).remove();
+    });
+  });
+
+  // qualification
+  $(".qualification > div").each(function (t) {
+    console.log(t);
+    $(this).on("click", function () {
+      $(this).remove();
+    });
+  });
 });
 
 $(document).ready(function () {
