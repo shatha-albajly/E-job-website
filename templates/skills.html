@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="../style.css" />
+    <title>Job Finder Website</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+    class="navbar navbar-expand-sm navbar-light py-2 hover fixed-top border-bottom fixed-top bg-white"
+  >
+    <div class="container">
+      <a
+        href="../index.html"
+        class="navbar-brand fw-bold text-primary"
+        
+        >E-Job</a
+      >
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navmenu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="../index.html" style="color: #2d2d2d" class="nav-link"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="all-jobs.html" style="color: #2d2d2d" class="nav-link"
+              >All Jobs</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="partners.html" class="nav-link" style="color: #2d2d2d"
+              >Partners</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="aboutUs.html" style="color: #2d2d2d" class="nav-link"
+              >About Us</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="contactUs.html" style="color: #2d2d2d" class="nav-link"
+              >Contact Us</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="services.html" style="color: #2d2d2d" class="nav-link"
+              >Services</a
+            >
+          </li>
+         
+          
+          <li class="dropdown nav-item mx-3">
+            <a
+              href="profile.html"
+              class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
+              id="dropdownUser2"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="../images/profile.jpg"
+                alt=""
+                width="32"
+                height="32"
+                class="rounded-circle me-2"
+              />
+            </a>
+            <ul
+              class="dropdown-menu text-small shadow"
+              aria-labelledby="dropdownUser2"
+            >
+              <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item language  ">
+             
+            <select
+            class="form-select language-select"
+            aria-label="Default select example"
+            
+          >
+           
+            <option value="en">English </option>
+            <option value="ar">Arabic </option>
+          </select>
+          
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Profile -->
+    <section class="profile my-5 mx-auto" id="profile">
+      <div
+        class="container row mx-auto justify-content-between"
+        style="margin-top: 5rem"
+      >
+      <div
+      class="d-flex flex-column col-12 col-md-3 flex-shrink-0 py-3 bg-light rounded mx-auto shadow w-sm-100 mb-5 mb-md-0   "
+      
+    >
+    <div class="p-1 w-100 d-flex justify-content-center ">
+      <img
+    src="../images/profile.jpg"
+    alt=""
+    width="120"
+    height="120"
+    class="rounded-circle  mx-auto "
+  />
+    </div>
+    
+      <div
+        class=" mx-auto"
+      >
+       
+        <p class="fs-6 fw-bold mx-auto text-primary ">Shatha Al-Bajly</p>
+      </div>
+      <hr />
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <a
+            href="dashboard.html"
+            class="nav-link link-dark"
+            aria-current="page"
+          >
+          
+            <svg class="bi me-2" width="16" height="16">
+              
+              <use xlink:href="#home"></use>
+            </svg>
+            Personal Data
+          </a>
+        </li>
+        <li>
+          <a href="experience.html" class="nav-link link-dark">
+            <svg class="bi me-2" width="16" height="16">
+              <use xlink:href="#speedometer2"></use>
+            </svg>
+            Experience
+          </a>
+        </li>
+        <li>
+          <a href="skills.html" class="nav-link link-dark">
+            <svg class="bi me-2" width="16" height="16">
+              <use xlink:href="#table"></use>
+            </svg>
+            Skills
+          </a>
+        </li>
+        <li>
+          <a href="qualification.html" class="nav-link link-dark">
+            <svg class="bi me-2" width="16" height="16">
+              <use xlink:href="#grid"></use>
+            </svg>
+            Educational and Courses
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+        <div class="col-12 col-md-5  bg-light rounded mx-auto shadow ">
+          <!-- <div class="row">
+            <div class="col">
+              <img
+                src="../images/profile.jpg"
+                alt=""
+                width="70"
+                height="70"
+                class="rounded-circle me-2"
+              />
+            </div>
+            <div class="col">
+              <p class="h3">Shatha Al-Bajly</p>
+            </div>
+          </div> -->
+          <div class="row">
+          
+            <div class=" border-right">
+                <div class="p-3 pb-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3 ">
+                        <h4 class="text-right text-primary">Skills</h4>
+                        <i class="bi bi-plus h2 text-primary " style="cursor: pointer;"></i>
+                    </div>
+                    <div class="skills">
+                        <span class="p-2 py-1 mx-1 mb-2 d-inline-flex  rounded-pill bg-primary text-white">
+                            javascript
+                            <i class="bi bi-x"
+                            style="cursor: pointer;"
+                            data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop"></i>
+                        </span>
+                        <span class="p-2 py-1 mx-1 mb-2 d-inline-flex  rounded-pill bg-primary text-white">
+                            php
+                            <i class="bi bi-x"
+                            style="cursor: pointer;"
+                            data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop"></i>
+                        </span>
+                        <span class="p-2 py-1  mx-1 mb-2 d-inline-flex  rounded-pill bg-primary text-white">
+                            python
+                            <i class="bi bi-x"
+                            style="cursor: pointer;"
+                            data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop"></i>
+                        </span>
+                        <span class="p-2 py-1  mx-1  mb-2 d-inline-flex  rounded-pill bg-primary text-white">
+                            html
+                            <i class="bi bi-x"
+                            style="cursor: pointer;"
+                            data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop"></i>
+                        </span>
+                        <span class="p-2  py-1  mx-1 mb-2 d-inline-flex  rounded-pill bg-primary text-white">
+                            css
+                            <i class="bi bi-x"
+                            style="cursor: pointer;"
+                            data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop"></i>
+                        </span>
+                        <span class="p-2 py-1  mx-1 mb-2 d-inline-flex  rounded-pill bg-primary text-white">
+                            jquery
+                            <i class="bi bi-x"
+                            style="cursor: pointer;
+                            " data-bs-toggle="modal"
+                             data-bs-target="#staticBackdrop"></i>
+                        </span>
+                        <span class="p-2 py-1  mx-1  mb-2 d-inline-flex  rounded-pill bg-primary text-white">
+                            larvel
+                            <i class="bi bi-x"
+                            style="cursor: pointer;"
+                            data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop"></i>
+                        </span>
+                        <span class="p-2 py-1  mx-1 mb-2 d-inline-flex  rounded-pill bg-primary text-white">
+                            c++
+                            <i class="bi bi-x"
+                            style="cursor: pointer;"
+                            data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop"></i>
+                        </span>
+                        <span class="p-2 py-1  mx-1 mb-2 d-inline-block  rounded-pill bg-primary text-white">
+                            java
+                            <i class="bi bi-x"
+                            style="cursor: pointer;"
+                            data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop"></i>
+                        </span>
+                        <span class="p-2 py-1  mx-1 mb-2 d-inline-flex  rounded-pill bg-primary text-white">
+                            figma
+                            <i class="bi bi-x"
+                            style="cursor: pointer;"
+                            data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop"></i>
+                        </span>
+                        <span class="p-2 py-1  mx-1 mb-2 d-inline-flex  rounded-pill bg-primary text-white">
+                            web design
+                            <i class="bi bi-x"
+                            style="cursor: pointer;"
+                            data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop"></i>
+                        </span>
+                        <span class="p-2 py-1  mx-1 mb-2 d-inline-block  rounded-pill bg-primary text-white">
+                            database
+                            <i class="bi bi-x"
+                            style="cursor: pointer;"
+                            data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop"></i>
+                        </span>
+                        <span class="p-2 py-1  mx-1 mb-2 d-inline-flex  rounded-pill bg-primary text-white">
+                            mysql
+                            <i class="bi bi-x"
+                            style="cursor: pointer;"
+                            data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop"></i>
+                        </span>
+                        <span class="p-2 py-1  mx-1 mb-2 d-inline-flex  rounded-pill bg-primary text-white">
+                            nosql
+                            <i class="bi bi-x"
+                            style="cursor: pointer;"
+                            data-bs-toggle="modal"
+                             data-bs-target="#staticBackdrop"></i>
+                        </span>
+                        
+                    
+
+                    </div>
+                   
+                  
+                </div>
+            </div>
+           
+        </div>
+    
+          </div>
+          <div class="col-12 col-md-3"></div>
+
+        </div>
+      </div>
+
+       <!-- Modal -->
+    <div
+    class="modal fade"
+    id="staticBackdrop"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+    tabindex="-1"
+    aria-labelledby="staticBackdropLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Delete</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">Do you want t delete?</div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            No
+          </button>
+          <button type="button" class="btn btn-primary">Yes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </section>
+ 
+
+    
+    <!-- footer -->
+    <footer
+      class="text-center text-white p-2"
+      style="background-color: #f1f1f1"
+    >
+      <!-- <div class="container">
+        <ul class="ms-auto row">
+          <li class="nav-item col">
+            <a href="all-jobs.html" style="color: #2d2d2d" class="nav-link"
+              >All Jobs</a
+            >
+          </li>
+          <li class="nav-item col">
+            <a href="partners.html" class="nav-link" style="color: #2d2d2d"
+              >Partners</a
+            >
+          </li>
+          <li class="nav-item col">
+            <a href="aboutUs.html" style="color: #2d2d2d" class="nav-link"
+              >About Us</a
+            >
+          </li>
+          <li class="nav-item col">
+            <a href="contactUs.html" style="color: #2d2d2d" class="nav-link"
+              >Contact Us</a
+            >
+          </li>
+          <li class="nav-item col">
+            <a href="services.html" style="color: #2d2d2d" class="nav-link"
+              >Services</a
+            >
+          </li>
+        </ul>
+      </div> -->
+      <!-- Grid container -->
+      <div class="container">
+        <!-- Section: Social media -->
+        <section class="">
+          <!-- Facebook -->
+          <a
+            class="btn btn-link btn-floating"
+            style="color: #2d2d2d"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="bi bi-facebook"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-link btn-floating"
+            style="color: #2d2d2d"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="bi bi-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            class="btn btn-link btn-floating"
+            style="color: #2d2d2d"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="bi bi-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-link btn-floating"
+            style="color: #2d2d2d"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="bi bi-instagram"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn btn-link btn-floating"
+            style="color: #2d2d2d"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <!-- Github -->
+          <a
+            class="btn btn-link btn-floating"
+            style="color: #2d2d2d"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="bi bi-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center" style="color: #2d2d2d">
+        © 2022 Copyright:
+        <a style="color: #2d2d2d" href="index.html">e-job.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/scripts.js"></script>
+
+  </body>
+</html>
